@@ -1,0 +1,7 @@
+
+public class Main {
+    public static void main(String[] args) {
+        int purchasePrice = 5;
+        System.out.println("Purchase price plus sales tax is " + purchasePrice*1.05);
+    }
+}
