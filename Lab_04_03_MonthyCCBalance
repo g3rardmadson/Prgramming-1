@@ -1,0 +1,8 @@
+
+public class Main {
+    public static void main(String[] args) {
+        int cardBalance = 5000;
+        System.out.println("Card balance plus interest is " + cardBalance*1.17);
+        System.out.println("Card balance plus interest is " + 5850*1.17);
+    }
+}
