@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        int winterCosts = 349;
+        int springCosts = 731;
+        int summerCosts = 102;
+        int fallCosts = 489;
+        int totalCosts = winterCosts + springCosts + fallCosts + summerCosts;
+        System.out.println("Winter costs: $" + winterCosts);
+        System.out.println("Spring costs: $" + springCosts);
+        System.out.println("Summer costs: $" + summerCosts);
+        System.out.println("Fall costs: $" + fallCosts);
+        System.out.println("Total costs: $" + totalCosts);
+    }
+}
