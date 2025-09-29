@@ -1,0 +1,18 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("What is the price of your item? :");
+        double price = in.nextDouble();
+
+        if (price >= 100) {
+            System.out.println("Shipping is free! Your total price is $" + price);
+        } else {
+            double total  = price + (price* 0.02);
+            double shipping = total - price;
+            System.out.println("The shipping cost is $" + shipping + ". \nYour total cost is $" + total);
+        }
+    }
+    }
