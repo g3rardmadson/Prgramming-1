@@ -1,0 +1,16 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("What is your numerical birth month? :");
+        int month = in.nextInt();
+
+        if (month > 12) {
+            System.out.println("You entered an incorrect month value: " + month);
+        } else {
+            System.out.println("Your birth month is: " + month);
+        }
+    }
+    }
