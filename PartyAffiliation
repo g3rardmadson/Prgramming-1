@@ -1,0 +1,20 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("What is the first letter of your political party affiliation? Please choose from D, R, or I:");
+        String party =  in.nextLine();
+
+        if (party.equals("D")) {
+            System.out.println("You got a Democratic Donkey!");
+        } else if (party.equals("R")) {
+            System.out.println("You got a Republican Elephant!");
+        } else if (party.equals("I")) {
+            System.out.println("You got an Independent person!");
+        }else{
+            System.out.println("You got Other!");
+        }
+    }
+    }
