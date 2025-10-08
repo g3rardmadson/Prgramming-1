@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String invalid = "";
+        int temp = 0;
+        double conv = 0;
+        boolean done = false;
+        do
+        {
+            System.out.print("Enter a temperature in Celcius: ");
+            if(in.hasNextInt())
+            {
+                temp = in.nextInt();
+                in.nextLine();
+                conv = (temp * 1.8) + 32;
+                System.out.println("Your temperature in Fahrenheit is: " + conv);
+                done = true;
+            }
+            else
+            {
+                invalid = in.nextLine();
+                System.out.println("Please enter a number, not words");
+                in.nextInt();
+            }
+        }while(!done);
+
+    }
+}
